@@ -1,0 +1,35 @@
+.container {
+    padding: 0 20%;
+}
+.todo__name {
+    width: 100%;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+.task__item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #5f5959;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.task__name {
+    margin: 0;
+}
+
+.done__green {
+    background-color: green;
+    color: lightgreen;
+    transition: background-color 1s, color 0.5s;
+}
+.done__green .task__name {
+    text-decoration: line-through;
+}
+
+.overdue {
+    background-color: darkred;
+    color: lightcoral;
+    transition: background-color 1s, color 0.5s;
+}
