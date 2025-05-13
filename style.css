@@ -1,3 +1,8 @@
+body {
+    background-color: #493F41;
+    color: white;
+}
+
 .container {
     padding: 0 20%;
 }
@@ -11,19 +16,37 @@
 .task__item {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #5f5959;
+    border: none;
+    border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
 }
+
 .task__name {
     margin: 0;
 }
 
+.btn {
+    border-radius: 10px;
+    border: none;
+    background-color: #493F41;
+    color: white;
+}
+
+.done__green .btn {
+    background-color: green;
+}
+
+.overdue .btn {
+    background-color: darkred;
+    transition: background-color 1s, color 0.5s;
+}
 .done__green {
     background-color: green;
     color: lightgreen;
     transition: background-color 1s, color 0.5s;
 }
+
 .done__green .task__name {
     text-decoration: line-through;
 }
